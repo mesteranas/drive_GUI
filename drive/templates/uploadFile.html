@@ -1,0 +1,10 @@
+{%extends "home.html"%}
+{%block title%}upload file{%endblock%}
+{%block content%}
+<h1>upload file</h1>
+<form method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit">upload </button>
+</form>
+{%endblock%}

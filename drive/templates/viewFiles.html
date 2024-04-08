@@ -1,0 +1,7 @@
+{%extends "home.html"%}
+{%block title%}files{%endblock%}
+{%block content%}
+{%for file in files%}
+<h2><a href="{%url "view" file.pk%}">{{file.title}}</a></h2>
+{%endfor%}
+{%endblock%}
